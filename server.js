@@ -10,11 +10,12 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 
-const PWD = process.env.DBPWD;
-const databaseUrl = `mongodb+srv://Andre2020:${encodeURIComponent(PWD)}@primarycluster.o092b.mongodb.net/fitnessTracker`;
+// required if running with connection 
+// const PWD = process.env.DBPWD;
+const localDatabaseUrl = `'mongodb://localhost/workout-tracker'`;
 
 mongoose.connect(process.env.MONGODB_URI || 
-    databaseUrl, { 
+    localDatabaseUrl, { s
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
