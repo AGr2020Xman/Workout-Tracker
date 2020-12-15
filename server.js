@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 
-const PWD = process.env.DBPWD
+const PWD = process.env.DBPWD;
 const databaseUrl = `mongodb+srv://Andre2020:${encodeURIComponent(PWD)}@primarycluster.o092b.mongodb.net/fitnessTracker`;
 
 mongoose.connect(process.env.MONGODB_URI || 
