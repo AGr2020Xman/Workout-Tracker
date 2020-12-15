@@ -15,7 +15,7 @@ app.use(express.static('public'));
 const localDatabaseUrl = `'mongodb://localhost/workout-tracker'`;
 
 mongoose.connect(process.env.MONGODB_URI || 
-    localDatabaseUrl, { s
+    localDatabaseUrl, { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
