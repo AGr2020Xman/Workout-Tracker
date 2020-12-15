@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
-const PORT = process.env.port || 7000;
+const PORT = process.env.PORT || 7000;
 
 const app = express();
 
@@ -27,5 +27,5 @@ app.use(require("./routes/html-routes"));
 app.use(require("./routes/api-routes.js"));
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!, see http://localhost:${PORT}`);
+  console.log(`App running on port ${PORT}!`);
 });
