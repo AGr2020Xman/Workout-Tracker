@@ -1,57 +1,102 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Note Taker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+![badge](https://img.shields.io/badge/License-mit-green.svg)<br />
+
+## Description
+
+This fitness tracking app allows users to add, and keep record of their daily exercise. Very useful for people on the go!
+
+## Contents
+
+- [Installation](#installation)
+- [User Story](#user-story)
+- [Usage](#usage)
+- [Demonstration](#demonstration)
+- [Screenshots](#screenshots)
+- [Questions](<#questions-(FAQ)>)
+- [Contact](#contact)
+- [Author](#authors)
+- [Acknowledgements](#acknowledgements)
+
+## Installation
+
+#### Requirements:
+
+1. MongoDB
+2. Nodejs
+
+#### To install Workout Tracker app:
+
+1. Clone the repo to your local machine.
+2. Open a terminal window and navigate to the local directory.
+3. Run
+
+```
+npm install
+```
+
+4. Create a new mongodb database.
+5. Create a .env file in the root directory of the application. Add <addr>MONGODB_URI=mongoapplication<addr>, replacing "mongoapplication" with the connection string to your database.
+6. Run
+
+```
+npm run seed
+```
+
+to apply seed data.
 
 ## User Story
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+```
+As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+```
 
-## Business Context
+## Usage
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+1. Open a terminal and navigate to the applications cloned directory.
 
-## Acceptance Criteria
+2. Run `node server.js` in the directory.
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+3. Open a web browser and navigate to https://localhost:7000.
 
-The user should be able to:
+4. Use the workout tracker app!
 
-  * Add exercises to a previous workout plan.
+## Demonstration
 
-  * Add new exercises to a new workout plan.
+- [Deployed Application](https://fitness-tracking-simple.herokuapp.com)
 
-  * View the combined weight of multiple exercises on the `stats` page.
+## Tests
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+- No included tests for this application.
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+## Screenshots
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+_Landing page/summary page to get started_
 
-## Commit Early and Often
+![](./assets/images/landing.JPG)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+_Selecting a workout_
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+![](./assets/images/selectwork.JPG)
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+_Aggregate statistics of workouts page_
 
-Follow these guidelines for committing:
+![](./assets/images/stats.JPG)
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+## Questions
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+- Submit questions to my contact details below.
+- App is hosted on Heroku.
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+## Contact
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+- Contact me with any questions on my email: agre.fun21@gmail.com or silver.grech@gmail.com
 
-We want you to have well over 200 commits by graduation, so commit early and often!
+## Author
 
-## Submission on BCS
+- Initial front end files to develop by Trilogy Education Services
+- Andr&eacute; Grech - 15/12/2020
 
-You are required to submit the following:
+### Acknowledgements
 
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+- © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
